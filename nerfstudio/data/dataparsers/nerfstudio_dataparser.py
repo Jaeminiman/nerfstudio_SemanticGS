@@ -50,7 +50,7 @@ class NerfstudioDataParserConfig(DataParserConfig):
     scale_factor: float = 1.0
     """How much to scale the camera origins by."""
     downscale_factor: Optional[int] = None
-    """How much to downscale images. If not set, images are chosen such that the max dimension is <1600px."""
+    """How much to downscale images. If not set, images are chosen such that the max dimension is <1600px. Choose among 1, 2, 4, 8"""
     scene_scale: float = 1.0
     """How much to scale the region of interest by."""
     orientation_method: Literal["pca", "up", "vertical", "none"] = "up"
